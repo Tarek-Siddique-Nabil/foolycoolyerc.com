@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "integral-CF";
+  font-weight: 400;
+  src: url("./IntegralCF-Regular.woff");
+}
+@font-face {
+  font-family: "integral-CF";
+  font-weight: 500;
+  src: url("./IntegralCF-Medium.woff");
+}
+@font-face {
+  font-family: "integral-CF";
+  font-weight: 600;
+  src: url("./IntegralCF-DemiBold.woff");
+}
+@font-face {
+  font-family: "integral-CF";
+  font-weight: 700;
+  src: url("./IntegralCF-Bold.woff");
+}
+@font-face {
+  font-family: "integral-CF";
+  font-weight: 800;
+  src: url("./IntegralCF-ExtraBold.woff");
+}
+@font-face {
+  font-family: "integral-CF";
+  font-weight: 800;
+  src: url("./IntegralCF-Heavy.woff");
+}

@@ -1,0 +1,14 @@
+export { default as HEADER_COOL_BOY } from "./header-cool-boy.png";
+export { default as HYPE_ILLUSTRATION } from "./hype-ilustration.png";
+export { default as FLCL_TWO_IMG } from "./flcl-two-image.png";
+export { default as ROADMAP_BOY_IMG } from "./roadmap-section-boy.png";
+export { default as DXT_LOGO } from "./dxt.png";
+export { default as COIN_MARKET_CAP } from "./coin-market-cap.png";
+export { default as TRUST_WALLET } from "./trust-wallet.png";
+export { default as UNISWAP } from "./uniswap.png";
+export { default as HOUOBY_LOGO } from "./houby.png";
+export { default as GIRLS_AND_ROBOOT } from "./girls-and-roboot.png";
+export { default as RANDOM_GILS_AND_ROBOT } from "./random-flcl-girls-and-roboot.png";
+export { default as ANIMEVERSE_FIRST_IMG } from "./animeverse-one.png";
+export { default as ANIMEVERSE_SECOND_IMG } from "./animeverse-two.png";
+export { default as ANIMEVERSE_THIRD_IMG } from "./animeverse-three.png";
