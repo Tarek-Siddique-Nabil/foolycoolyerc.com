@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-.container{
-    @apply max-w-[1600px] mx-auto
+.container {
+  @apply max-w-[1600px] mx-auto;
+}
+.gradient-text {
+  background-image: linear-gradient(
+    to top right,
+    #8f4af5,
+    #8054ea,
+    #64a9c9 50%,
+    #75f7a3
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }

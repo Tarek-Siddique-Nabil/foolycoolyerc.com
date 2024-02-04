@@ -22,7 +22,7 @@
       </svg>
     </button>
     <div
-      class="fixed lg:static w-full lg:w-auto h-screen md:h-auto bg-band-red-500 lg:bg-transparent top-0 left-0 py-32 lg:py-0 lg:-translate-x-0 transition-transform {navbar_show
+      class="fixed lg:static w-full lg:w-auto h-screen md:h-auto lg:bg-transparent top-0 left-0 py-32 lg:py-0 lg:-translate-x-0 transition-transform collapse-nav {navbar_show
         ? 'translate-x-0'
         : '-translate-x-full'}"
     >
@@ -30,7 +30,9 @@
         {#each navbar_items_data as nav_data}
           <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
           <li class="" on:keydown={null} on:click={() => (navbar_show = false)}>
-            <a href={nav_data.href} class="">{@html nav_data.label} </a>
+            <a class="font-medium" href={nav_data.href}
+              >{@html nav_data.label}
+            </a>
           </li>
         {/each}
         <li>
@@ -76,7 +78,8 @@
         <li>
           <a
             href="https://app.uniswap.org/#/swap?outputCurrency=0xc65f8ce288954d914f58e3d19ea8294dfa5f2e5f"
-            class="px-5 py-2 bg-white text-black rounded">Buy Now</a
+            class="px-5 font-bold text-xl py-3 bg-black text-white rounded-lg font-sans"
+            >Buy Now</a
           >
         </li>
         <li class="block lg:hidden">
@@ -90,7 +93,7 @@
   </div>
 </nav>
 
-<header class=" bg-band-red-500">
+<header class=" bg-black">
   <div class="container">
     <div class="flex lg:flex-row flex-col lg:w-full lg:h-screen items-center">
       <div class="w-full lg:w-[45%] pt-28 px-5 text-center">
@@ -138,8 +141,8 @@
           </a>
         </div>
       </div>
-      <div class="w-full lg:w-[55%]">
-        <div class="wrapper text-center">
+      <div class="w-full lg:w-[55%] mt-[18%]">
+        <div class="">
           <img src={HEADER_COOL_BOY} alt="" class="mx-auto" />
         </div>
       </div>
@@ -149,25 +152,36 @@
 
 <style>
   nav {
-    background: linear-gradient(180deg, #cf616d 0%, #d43647 100%);
+    background: linear-gradient(
+      to top right,
+      #8f4af5,
+      #8054ea,
+      #64a9c9,
+      #75f7a3
+    );
     z-index: 1000;
+  }
+  .collapse-nav {
+    background: linear-gradient(
+      to top right,
+      #8f4af5,
+      #8054ea,
+      #64a9c9,
+      #75f7a3
+    );
   }
   .heading-animation-character {
     text-transform: uppercase;
     background-image: linear-gradient(
-      -225deg,
-      #ffffff 0%,
-      #ffffff 29%,
-      #d3d1a9 67%,
-      #fff 100%
+      to top right,
+      #8f4af5,
+      #8054ea,
+      #64a9c9,
+      #75f7a3
     );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
+    color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: text-clip 2.5s linear infinite;
     display: inline-block;
   }

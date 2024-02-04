@@ -26,7 +26,7 @@
     },
   ];
 
-  const logos = [TRUST_WALLET, COIN_MARKET_CAP, UNISWAP, DXT_LOGO, HOUOBY_LOGO];
+  const logos = [COIN_MARKET_CAP, DXT_LOGO, HOUOBY_LOGO];
 </script>
 
 <main>
@@ -91,11 +91,11 @@
   <!--  tokenomics -->
   <section
     id="tokenomics"
-    class=" relative overflow-x-hidden w-full bg-band-red-500 pt-20 pb-16 z-10"
+    class=" relative overflow-x-hidden w-full bg-black pt-20 pb-16 z-10"
   >
     <div class="art-text h-100 lg:h-[200px]">
       <h1
-        class="text-9xl lg:text-[580px] font-bold absolute top-[-5%] lg:top-[-16%] lg:left-[50%] lg:translate-x-[-50%] -z-10 text-band-red-500"
+        class="text-9xl lg:text-[580px] font-bold absolute top-[-5%] lg:top-[-16%] lg:left-[50%] lg:translate-x-[-50%] -z-10 text-transparent"
       >
         $FLCL
       </h1>
@@ -104,7 +104,7 @@
       <div class="flex flex-col lg:flex-row items-end">
         <div class="w-full lg:w-2/5 lg:mb-28 mb-12 px-10">
           <h1
-            class="text-8xl md:text-[128px] text-white mt-8 lg:mt-0 font-extrabold"
+            class="text-8xl md:text-[128px] text-white mt-8 lg:mt-0 font-extrabold gradient-text w-fit"
           >
             $FLCL
           </h1>
@@ -112,8 +112,8 @@
             class="text-white text-3xl md:text-[40px] leading-tight list-disc pl-8 lg:mt-5"
           >
             <li>1B Token Supply</li>
-            <li>3% Buy Tax</li>
-            <li>3% Sell Tax</li>
+            <li>0% Buy Tax</li>
+            <li>0% Sell Tax</li>
             <li>100% Liquidity Locked</li>
           </ul>
         </div>
@@ -157,7 +157,9 @@
             <p class="md:text-[14px] xl:text-lg text-[8px] xl:font-semibold">
               A virtual anime world where the anime community can
             </p>
-            <p class="md:text-lg xl:text-xl text-[9px] font-bold">
+            <p
+              class="md:text-xl xl:text-3xl leading-none text-lg font-normal gradient-text"
+            >
               <span class="inline-block align-middle"
                 >Connect. Play. Earn. Trade. Have Fun.</span
               >
@@ -198,7 +200,7 @@
       >
         <div class="card-wrapper lg:mt-0 mt-[180px] left-[10%]">
           <div
-            class="card relative text-center h-full p-5 lg:p-10 border border-band-red-500 rounded-2xl lg:px-16"
+            class="card relative text-center h-full p-5 lg:p-10 border border-black rounded-2xl lg:px-16"
           >
             <img
               src={ROADMAP_BOY_IMG}
@@ -206,7 +208,7 @@
               alt=""
             />
             <h1
-              class="lg:text-5xl text-3xl font-bold text-band-red-500 py-3 lg:py-5"
+              class="lg:text-5xl text-3xl font-bold gradient-text py-3 lg:py-5"
             >
               Community
             </h1>
@@ -222,10 +224,10 @@
         </div>
         <div class="card-wrapper">
           <div
-            class="card text-center h-full p-5 lg:p-10 border border-band-red-500 rounded-2xl lg:px-16"
+            class="card text-center h-full p-5 lg:p-10 border border-black rounded-2xl lg:px-16"
           >
             <h1
-              class="lg:text-5xl text-3xl font-bold text-band-red-500 py-3 lg:py-5"
+              class="lg:text-5xl text-3xl font-bold gradient-text py-3 lg:py-5"
             >
               Transparency
             </h1>
@@ -242,7 +244,7 @@
   </section>
 
   <section id="logos">
-    <div class="bg-band-red-500 px-4 lg:px-0 py-10">
+    <div class="bg-black px-4 lg:px-0 py-10">
       <div class="flex justify-center gap-6 lg:gap-8 flex-wrap">
         {#each logos as logo}
           <img src={logo} alt="" class="h-[30px] lg:h-auto" />
